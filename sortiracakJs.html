@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>menyortir array dalam urutan acak</p>
+
+    <button onclick="myAcak()">try it</button>
+    <p id="demo"></p>
+
+
+<script>
+    var points = [40, 100, 1, 5, 25, 10];
+    //document.getElementById("demo").innerHTML = points;
+
+    function myAcak() {
+        points.sort(function(a, b){return 0.5 - Math.random()});
+
+        document.getElementById("demo").innerHTML = points;
+    }
+
+    //mengurutkan dari atas ke bawah
+   /* points.sort(function(a, b){return a - b});
+    document.getElementById("demo").innerHTML = points[0]; */
+
+    //mengurutkan dari bawah ke atas
+   /* points.sort(function(a, b){return b - a});
+    document.getElementById("demo").innerHTML = points[0];*/
+
+</script>    
+</body>
+</html>

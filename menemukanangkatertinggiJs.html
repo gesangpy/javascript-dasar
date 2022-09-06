@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Menemukan angka tertinggi dalam array menggunkan Math.max() dan Math.min()</p>
+
+    <p id="demo"></p>
+
+<script>
+    var points = [40, 100, 1, 5, 25, 10];
+   
+    document.getElementById("demo").innerHTML = myArrayMax(points);
+
+ //angka tertinggi
+    function myArrayMax(arr){
+        return Math.max.apply(null,arr);
+    }
+
+    //angka terendah
+   /* function myArrayMax(arr){
+        return Math.min.apply(null, arr);
+    }*/
+</script>
+</body>
+</html>

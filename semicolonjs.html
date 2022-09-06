@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semocolons</title>
+</head>
+<body>
+    <h2>javascript statement</h2>
+    <p>javascript statement are seperated by semicolons</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <br>
+   <button type="button" onclick="myFunction()">click</button>
+
+    <script>
+        var a, b, c;
+        a= 5;
+        b=6; c=a+b;
+
+        var x;
+        x=6;
+
+        document.getElementById("demo1").innerHTML = c;
+        function myFunction() {
+        document.getElementById("demo2").innerHTML = "hello Gesang?";
+        document.getElementById("demo3").innerHTML = "How are you?";
+        document.getElementById("demo4").innerHTML = "john" + " " + "Doe";
+        document.getElementById("demo5").innerHTML = (5+6)*x;
+        }
+
+    </script>
+    
+</body>
+</html>

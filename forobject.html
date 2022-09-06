@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Object</title>
+</head>
+<body>
+
+    <h2>javascript For/In Loop</h2>
+    <p>the for/in statement loops through the property of an object </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+<script>
+
+    let person =  {fname: "john", lname:"Doe", age:25};
+    let number = [5.5, 4, 9, 15, 20];
+    let text ="";
+    let text1 ="";
+
+    for(let x in person){
+        text += person[x] + " ";
+    }
+    document.getElementById('demo').innerHTML = text;
+
+    for(let a in number){
+         text1 += number[a] + " ";
+    }
+    document.getElementById('demo').innerHTML = text1;
+</script>    
+</body>
+</html>

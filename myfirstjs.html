@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first JavaScript</title>
+</head>
+<body>
+<!-- salah satu dari banyak metode HTML JavaScript adalah getElementById() -->
+    <caption>Belajar Get Elemnet By Id</caption><br><br><br>
+       <!-- getElementByid -->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">click me to display Date and Time</button>
+
+    <p id="demo"></p>
+
+    <p id="coba"> ======demo js mengubah content======</p>  
+    <button type="button" onclick="document.getElementById('coba').innerHTML = 'mengubah text javascript' ">click me!</button>
+
+    <p id="coba2"> ======demo js mengubah gaya html(css)======</p>
+    <button type="button" onclick="document.getElementById('coba2').style.fontSize='30px'">mengubah gaya</button>
+
+     <p id="coba3"> ======demo js menyembunyikan elemen html======</p>
+     <button type="button" onclick="document.getElementById('coba3').style.display='none'">menyembunyikan</button>
+
+      <p id="coba4" style="display: none;"> ======demo js menampilkan html(css)======</p>
+      <button type="button" onclick="document.getElementById('coba4').style.display='block'">menampilkan</button>
+
+    
+</body>
+</html>

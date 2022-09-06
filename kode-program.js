@@ -1,0 +1,1 @@
+alert("Hello, ini adalh program Js eksternal");

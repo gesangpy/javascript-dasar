@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+<body>
+
+    <p>input Your age and click the button:</p>
+    <input value="18" id="age">
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+<script>
+    function myFunction(){
+        //jika usia variabel adalah di bawah 18. nilai variabel votetable akan menjadi terlalu muda jika tidak nilai akan menjadi cukup tua
+        var age, voteable;
+        age = document.getElementById('age').value;
+        voteable =(age < 18) ? "Too young":"Old enough";
+
+        document.getElementById('demo').innerHTML = voteable + " to vote";
+        console.log(age);
+    }
+</script>    
+</body>
+</html>

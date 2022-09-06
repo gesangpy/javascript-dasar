@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Array</title>
+</head>
+<body>
+
+    <p style="border: 1px solid #000; padding: 10px; text-align: center;">Latihan Array</p>
+    <p id="demo"></p>
+
+
+
+    <script>
+        var fruits, text, flen, i;
+
+        fruits = ["Banana", "Orange", "Apple", "Manggo"];
+        flen = fruits.length;
+
+        text ="<ul>";
+        for(i= 0; i < flen; i++){
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+    </script>
+    
+</body>
+</html> 
+
+
+
